@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Create Product</title>
-    <link rel="stylesheet" type="text/css" th:href="@{../css/styles.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
 </head>
 <body>
     <div th:replace="~{fragments/header :: header}"></div> 
@@ -13,6 +13,7 @@
             <label for="code">Code:</label>
             <input type="text" id="code" name="code" th:field="*{code}">
             <span th:if="${#fields.hasErrors('code')}" th:errors="*{code}" class="error"></span>
+             <span th:if= "${codeError}" th:text="|${codeError}|" class="error"></span>
         </div>
         <div>
             <label for="name">Name:</label>
@@ -21,7 +22,7 @@
         </div>
         <div>
             <label for="price">Price:</label>
-            <input type="number" id="price" name="price" th:field="*{price}">
+            <input type="text" id="price" name="price" th:field="*{price}">
             <span th:if="${#fields.hasErrors('price')}" th:errors="*{price}" class="error"></span>
         </div>
         <div>

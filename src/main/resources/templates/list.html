@@ -2,13 +2,13 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Product List</title>
-    <link rel="stylesheet" type="text/css" th:href="@{css/styles.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
 </head>
 <body>
-    <div th:replace="fragments/header :: header"></div> 
+    <div th:replace="~{fragments/header :: header}"></div> 
     <a th:href="@{/}">Back</a>
     <h3>Product List</h3>
-    <table>
+    <table th:unless="${#lists.isEmpty(products)}">
         <tr>
             <th>Code</th>
             <th>Name</th>
@@ -40,6 +40,9 @@
         </th-block>
         
     </table>
+     <div style="color:red; background-color: bisque; height: 50px; text-align:center; padding-top: 20px;" th:if="${#lists.isEmpty(products)}">
+          No product found !
+    </div>
     <a th:href="@{/products/create}" class="add-button">Add Product</a>
 </body>
 </html>

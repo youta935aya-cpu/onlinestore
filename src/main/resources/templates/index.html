@@ -3,7 +3,7 @@
 
 <head>
     <title>Welcome to Your Storage</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
 </head>
 
 <body>
@@ -12,7 +12,6 @@
     </header>
     <h2>Welcome to Your Storage</h2>
     <p>This is your online store's storage.</p>
-
     <a th:href="@{/products}" class="manage-button">Product Management</a>
 </body>
 
