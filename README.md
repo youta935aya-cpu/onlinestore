@@ -61,4 +61,8 @@ src/
 4. Access the application:
    Open `http://localhost:8089` in your web browser.
 
+License
+
+This project is licensed under the MIT License
+
 
