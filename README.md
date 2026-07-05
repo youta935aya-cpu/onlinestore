@@ -1,39 +1,38 @@
 # Online Store Application
 
-A modern, robust full-stack web application built with Java and Spring Boot. This application provides a comprehensive platform for managing an online store, featuring product catalog management, a responsive web interface, and a well-structured backend architecture.
+A Java-based web application built with Spring Boot for managing an online store product catalog. It includes a frontend using Thymeleaf templates and a backend that provides CRUD operations.
 
-## 🌟 Features
+## Features
 
-- **Product Management:** Full CRUD (Create, Read, Update, Delete) operations for store products.
-- **Responsive UI:** Dynamic and responsive frontend built with Thymeleaf templates and modern CSS.
-- **Layered Architecture:** Clean separation of concerns using Controllers, Services, and Data Access Objects (Repositories).
-- **Database Integration:** Seamless database operations with Spring Data JPA.
-- **RESTful Principles:** Structured routing and endpoints for efficient resource management.
+- Product Management: Create, Read, Update, and Delete operations for products.
+- Web Interface: Frontend built with Thymeleaf templates.
+- Architecture: Uses standard Spring MVC structure (Controllers, Services, Repositories).
+- Database Integration: Uses Spring Data JPA.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
-- **Backend Framework:** [Spring Boot](https://spring.io/projects/spring-boot) (Java)
-- **Frontend Template Engine:** [Thymeleaf](https://www.thymeleaf.org/)
-- **Data Access:** Spring Data JPA / Hibernate
-- **Build Tool:** Maven
+- Framework: Spring Boot (Java)
+- Template Engine: Thymeleaf
+- Data Access: Spring Data JPA
+- Build Tool: Maven
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 src/
 ├── main/
 │   ├── java/com/example/onlinestore/
-│   │   ├── business/      # Business logic and service layer (Services & Impls)
-│   │   ├── dao/           # Data access layer (Entities & Repositories)
-│   │   ├── web/           # Web layer (Controllers)
+│   │   ├── business/      # Service layer
+│   │   ├── dao/           # Entities and Repositories
+│   │   ├── web/           # Controllers
 │   │   └── OnlinestoreApplication.java # Application entry point
 │   └── resources/
-│       ├── application.properties # Configuration file
-│       ├── static/                # Static assets (CSS, JS, Images)
-│       └── templates/             # Thymeleaf HTML templates (index, list, create, edit)
+│       ├── application.properties
+│       ├── static/
+│       └── templates/     # HTML templates
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -41,38 +40,27 @@ src/
 - Maven 3.6+
 - Git
 
-### Installation & Running Locally
+### Installation
 
-1. **Clone the repository:**
+1. Clone the repository:
    ```bash
    git clone https://github.com/youta935aya-cpu/onlinestore.git
    cd onlinestore
    ```
 
-2. **Build the project:**
-   Using the Maven wrapper (Windows):
+2. Build the project:
    ```cmd
    mvnw.cmd clean install
    ```
-   Or if you have Maven installed globally:
-   ```cmd
-   mvn clean install
-   ```
 
-3. **Run the application:**
+3. Run the application:
    ```cmd
    mvnw.cmd spring-boot:run
    ```
 
-4. **Access the Application:**
-   Open your web browser and navigate to:
-   `http://localhost:8080`
+4. Access the application:
+   Open `http://localhost:8080` in your web browser.
 
-## 🤝 Contributing
+## License
 
-Contributions, issues, and feature requests are welcome! 
-Feel free to check the [issues page](https://github.com/youta935aya-cpu/onlinestore/issues).
-
-## 📝 License
-
-This project is open-source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
