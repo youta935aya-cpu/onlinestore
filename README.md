@@ -36,7 +36,7 @@ src/
 
 ### Prerequisites
 
-- Java Development Kit (JDK) 17 or higher
+- Java Development Kit (JDK) 21
 - Maven 3.6+
 - Git
 
@@ -59,8 +59,6 @@ src/
    ```
 
 4. Access the application:
-   Open `http://localhost:8080` in your web browser.
+   Open `http://localhost:8089` in your web browser.
 
-## License
 
-This project is licensed under the MIT License.
